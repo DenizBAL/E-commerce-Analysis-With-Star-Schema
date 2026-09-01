@@ -49,7 +49,7 @@ Dashboard üzerindeki tüm analizler dinamik DAX ölçüleri ile beslenmektedir:
 * **`PY Revenue` (Prior Year Revenue)** = `CALCULATE([Total Revenue], SAMEPERIODLASTYEAR(Dim_Date[FullDate]))`
 * **`YoY Revenue Growth %`** = `DIVIDE([Total Revenue] - [PY Revenue], [PY Revenue], 0)`
 
-- ![Dax_Fuction](Assets/Dax_Fuction.png)
+- ![Dax_Function](Assets/Dax_Function.png)
   
 ---
 
