@@ -10,6 +10,8 @@ Bu proje, bir e-ticaret platformuna ait ham verilerin **T-SQL** kullanılarak mo
 * **Veri Mimarisi:** T-SQL (MS SQL Server) üzerinde Yıldız Mimarisi (**Star Schema**) tasarlanmış; `Dim_Customer`, `Dim_Product`, `Dim_Date` boyut tabloları ve `Fact_Sales` olgu tablosu oluşturulmuştur.
 * **İş Zekası & Görselleştirme:** Power BI Desktop kullanılarak dinamik DAX hesaplamaları yazılmış ve 2 sayfadan oluşan dark-theme tasarıma sahip dashboard geliştirilmiştir.
 
+- ![StarSchema](Assets/Star_schema.png)
+
 ---
 
 ## 🛠️ Kullanılan Teknolojiler
@@ -29,6 +31,10 @@ Ham veriler SQL ortamında işlenerek ilişkisel veri omurgasına dönüştürü
 * **`Dim_Product` (Ürün Boyutu):** `ProductKey` (PK), `ProductID`, `ProductName`, `Category`, `Price`.
 * **`Dim_Date` (Tarih Boyutu):** `DateKey` (PK), `FullDate`, `Year`, `Month`, `MonthName`, `Quarter`, `Day`, `DayOfWeek`. 
 
+- ![StarSchema1](Assets/Star_Schema_1.png)
+ 
+- ![StarSchema2](Assets/Star_Schema_2.png)
+
 ---
 
 ## 🧮 Kullanılan DAX Metrikleri (`_Measure`)
@@ -43,6 +49,8 @@ Dashboard üzerindeki tüm analizler dinamik DAX ölçüleri ile beslenmektedir:
 * **`PY Revenue` (Prior Year Revenue)** = `CALCULATE([Total Revenue], SAMEPERIODLASTYEAR(Dim_Date[FullDate]))`
 * **`YoY Revenue Growth %`** = `DIVIDE([Total Revenue] - [PY Revenue], [PY Revenue], 0)`
 
+- ![Dax_Fuction](Assets/Dax_Fuction.png)
+  
 ---
 
 ## 📊 Dashboard Yapısı ve Görseller
@@ -56,10 +64,17 @@ Dashboard üzerindeki tüm analizler dinamik DAX ölçüleri ile beslenmektedir:
 * **Total Revenue by Status:** Tamamlanan, iptal edilen ve iade edilen siparişlerin ciro karşılığı.
 * **Total Revenue by PaymentMethod:** Ödeme yöntemlerinin payı (Gateway %47.45 ile ilk sırada).
 
+- ![Exe_sum](Assets/Exe_sum.png)
+
 ### 2. Customer & Product Deep-Dive (Müşteri & Ürün Detay Analizi)
 * **Matrix Tablosu:** Şehir ve Müşteri Segmentine (`New`, `Regular`, `VIP`) göre ciro dağılımı.
 * **Total Revenue by City (Map Visual):** Harita üzerinde bölgesal satış yoğunluğu.
 * **Total Orders by Age:** Yaş kırılımına göre sipariş adetleri.
 * **TOP 5 Total Revenue by Product:** En çok ciro getiren ilk 5 ürün (Headphones, Office Chair, Tablet, Smart Watch, Microphone).
 
+- ![custom_product](Assets/custom_product.png)
+
 ---
+
+## 📬 İletişim
+Bu proje ile ilgili sorularınız veya önerileriniz için benimle [LinkedIn profilim](https://www.linkedin.com/in/deniz-bal-64838b225) üzerinden iletişime geçebilirsiniz.
