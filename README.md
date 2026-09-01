@@ -75,6 +75,13 @@ Dashboard üzerindeki tüm analizler dinamik DAX ölçüleri ile beslenmektedir:
 - ![custom_product](Assets/custom_product.png)
 
 ---
+Özet ve İş Etkisi (Summary & Business Impact)
+
+Bu proje, ham e-ticaret verilerinin ilişkisel bir veri ambarı mimarisine (Star Schema) dönüştürülmesi ve yönetici düzeyinde görsel analitiğe dönüştürülmesi sürecini uçtan uca göstermektedir:
+
+* **Sistemli Veri Modelleme:** T-SQL üzerinde tasarlanan boyut ve olgu tabloları sayesinde veri tekrarı önlenmiş, sorgu performansı ve analitik esneklik optimize edilmiştir.
+* **Stratejik Karar Destek:** Toplam 37.7M$ ciro ve 49.9K siparişlik hacim üzerinden müşteri segmentasyonu, bölgesal yoğunlaşma ve ürün bazlı gelir sürücüleri net bir şekilde ortaya konmuştur.
+* **Görsel UX & Analitik Metrikler:** Dinamik DAX hesaplamaları ve zaman serisi analizleri (YoY Growth) ile üst yönetimin hızlı, veri odaklı kararlar almasını sağlayacak interaktif bir dashboard altyapısı sunulmuştur.
 
 ## 📬 İletişim
 Bu proje ile ilgili sorularınız veya önerileriniz için benimle [LinkedIn profilim](https://www.linkedin.com/in/deniz-bal-64838b225) üzerinden iletişime geçebilirsiniz.
