@@ -1,4 +1,3 @@
-Markdown
 # 🛒 E-Commerce Data Analytics & Power BI Dashboard
 
 Bu proje, bir e-ticaret platformuna ait ham verilerin **T-SQL** kullanılarak modellenmesi (Data Warehousing / Data Architecture) ve **Power BI** ile etkileşimli, veri odaklı bir kararlaştırma paneline (Executive & Deep-Dive Dashboard) dönüştürülmesi sürecini kapsamaktadır.
@@ -20,6 +19,8 @@ Bu proje, bir e-ticaret platformuna ait ham verilerin **T-SQL** kullanılarak mo
 * **Power BI Desktop:** Veri Modelleme (Relationships), DAX (Data Analysis Expressions), Dashboard Tasarımı & UX.
 * **DAX:** KPI metrikleri, Zaman İçi Karşılaştırmalar (Time Intelligence - YoY).
 
+## Veri Kaynağı ve Varsayımlar
+* **Veri seti Kaggle'dan alınmıştır. Bazı şehirler "Unknown" olarak kayıt edilmiştir.
 ---
 
 ## 📐 Veri Mimarisi & Yıldız Şeması (Star Schema)
@@ -82,6 +83,13 @@ Bu proje, ham e-ticaret verilerinin ilişkisel bir veri ambarı mimarisine (Star
 * **Sistemli Veri Modelleme:** T-SQL üzerinde tasarlanan boyut ve olgu tabloları sayesinde veri tekrarı önlenmiş, sorgu performansı ve analitik esneklik optimize edilmiştir.
 * **Stratejik Karar Destek:** Toplam 37.7M$ ciro ve 49.9K siparişlik hacim üzerinden müşteri segmentasyonu, bölgesal yoğunlaşma ve ürün bazlı gelir sürücüleri net bir şekilde ortaya konmuştur.
 * **Görsel UX & Analitik Metrikler:** Dinamik DAX hesaplamaları ve zaman serisi analizleri (YoY Growth) ile üst yönetimin hızlı, veri odaklı kararlar almasını sağlayacak interaktif bir dashboard altyapısı sunulmuştur.
+* **Tamamlanan siparişlerin cirosu $34,66M, iptal ve iade edilenler dahil toplam $37,73M.
+Önemli Bulgular:
+* **Electronics, toplam cironun yaklaşık %51'ini oluşturuyor ($19,2M / $37,7M).
+* **Ödemelerin %47'si Gateway ile yapılıyor.
+* **Tehran, cironun yaklaşık %28'ini getiriyor ($10,4M).
+* **İptal ve iade edilen siparişler yaklaşık $3,07M (%8).
+* **Regular müşteri segmenti cironun yarısından fazlasını oluşturuyor.
 
 ## 📬 İletişim
 Bu proje ile ilgili sorularınız veya önerileriniz için benimle [LinkedIn profilim](https://www.linkedin.com/in/deniz-bal-64838b225) üzerinden iletişime geçebilirsiniz.
